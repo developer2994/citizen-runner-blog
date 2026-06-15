@@ -1,0 +1,294 @@
+body {
+    /* 無駄な余白を消す */
+    margin: 0; 
+}
+
+/* ヘッダーの全体 */
+header {
+    position: relative;
+    /* 横幅全体に広げる */
+    width: 100%;
+    height: 70vh;
+}
+
+
+/* ヘッダー画像 */
+#headerPhoto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ヘッダーのタイトル部分 */
+#headerNote {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 30px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* メニュー全体の設定 */
+#menu {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    display: flex;
+    gap: 24px;   
+}
+/* メニューアイテムひとつひとつの設定 */
+.menuItem {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* メニューにホバー機能をつける */
+#menu a:hover {
+    border-bottom: 1px solid #F8F3E8;
+}
+
+/* ヘッダーの文言 */
+#headerText {
+    position: absolute;
+    left: 40px;
+    top: 150px;
+}
+
+/* ヘッダーのキャッチコピーの部分 */
+#headerCatchCopy {
+    color: #F8F3E8;
+    font-size: 40px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+    margin-bottom: 10px;
+}
+
+/* キャッチコピー下の文言 */
+#smallHeadText {
+    color: #F8F3E8;
+    font-size: 15px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* 最新記事の文字のところ */
+#latestarticle {
+    max-width: 1100px;
+    font-size: 20px;
+    margin: 30px auto 0;
+    /* 最新記事の横の棒 */
+    border-left: 5px solid #000033;
+    /* 最新記事と棒の間のギャップ */
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+/* 写真のサイズ */
+.photo {
+    width: 400px;
+    height: 250px;
+}
+
+/* 記事のサムネ全体のレイアウト */
+.contents {
+    display: flex;
+    gap: 28px;
+    max-width: 1100px; /*　最大の横幅  */
+    margin: 20px auto 30px auto;
+    background-color: white; /* 背景を白にする */
+    border-radius: 16px;  /* 角を丸くする */
+    padding: 24px 10px;  /* 内側の余白 */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* 影 */
+}
+
+/* サムネ内の文言レイアウト */
+.article-heading {
+    margin-left: 20px;
+}
+
+/* 種類-トレーニング */
+.article-traning {
+    width: 100px;
+    padding: 4px 1px;
+    margin: 2px 0;
+    border-radius: 5px;
+    color: #6699FF;
+    background-color: #99CCFF;
+
+}
+
+/* 種類-レース */
+.article-race {
+    width: 50px;
+    padding: 4px 5px 0 5px;
+    margin: 2px 0;
+    border-radius: 5px;
+    color: #6699FF;
+    background-color: #99CCFF;
+}
+
+.post-date {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* サムネのタイトル */
+.article-title {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/* 記事の説明 */
+.article-text {
+    margin-bottom: 30px;
+}
+
+
+/* Read moreのレイアウト */
+#readmore {
+    padding: 15px 15px;
+    margin: 3px 0 ;
+    border-radius: 5px;
+    color: #6699FF;
+    text-decoration: none;
+    background-color: #000033;
+    cursor: pointer;
+}
+
+#small {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    text-align: center;
+    background-color: #000033;
+    color: aliceblue;
+}
+
+/* ========================= */
+/* スマホ用の調整 */
+/* ========================= */
+
+@media screen and (max-width: 768px) { /* 画面幅が768px以下のときだけ適用 */
+
+    header { /* ヘッダー全体 */
+        height: 55vh; /* スマホではヘッダーを少し低くする */
+        min-height: 360px; /* 文字が潰れないように最低高さを確保 */
+    }
+
+
+
+    #headerNote { /* 左上のブログ名 */
+        position: absolute; /* スマホでは画面固定をやめる */
+        top: 20px; /* 上から20pxにする */
+        left: 20px; /* 左から20pxにする */
+        font-size: 22px; /* スマホ用に少し小さくする */
+    }
+
+    #menu { /* メニュー全体 */
+        position: absolute; /* スマホでは画面固定をやめる */
+        top: 60px; /* ブログ名の下に配置 */
+        left: 20px; /* 左寄せにする */
+        right: 20px; /* 右側にも余白を作る */
+        display: flex; /* 横並びは維持 */
+        flex-wrap: wrap; /* 入りきらない場合は折り返す */
+        gap: 14px; /* メニュー間の余白を少し狭くする */
+    }
+
+    .menuItem { /* メニュー1つ1つ */
+        font-size: 14px; /* スマホ用に文字を小さくする */
+    }
+
+    #headerText { /* ヘッダー内のキャッチコピー */
+        left: 20px; /* 左余白を小さくする */
+        top: 170px; /* スマホで見やすい位置にする */
+        width: calc(100% - 40px); /* 左右20pxずつ余白を取る */
+    }
+
+    #headerCatchCopy { /* 大きいキャッチコピー */
+        font-size: 30px; /* スマホ用に文字を小さくする */
+        line-height: 1.3; /* 複数行になっても読みやすくする */
+    }
+
+    #smallHeadText { /* キャッチコピー下の説明文 */
+        font-size: 14px; /* スマホ用に少し小さくする */
+        line-height: 1.6; /* 行間を広げる */
+    }
+
+    .contents { /* プロフィール部分全体 */
+        flex-direction: column; /* スマホでは画像と文章を縦並びにする */
+        width: 92%; /* 画面幅に対して少し余白を残す */
+        margin: 20px auto 30px auto; /* 中央寄せにする */
+        padding: 18px; /* スマホ用に内側余白を調整 */
+        gap: 18px; /* 画像と文章の間隔を調整 */
+    }
+
+    .photo { /* プロフィール画像 */
+        width: 100%; /* スマホでは親要素いっぱいに広げる */
+        height: 245px; /* 縦横比を保つ */
+    }
+
+    .profile-heading { /* プロフィール文のまとまり */
+        width: 100%; /* 横幅いっぱい使う */
+        text-align: center; /* スマホでは中央寄せにする */
+    }
+
+    .profile-title { /* 名前 */
+        font-size: 26px; /* スマホで見やすいサイズにする */
+    }
+
+    .profile-text { /* プロフィール本文 */
+        font-size: 15px; /* スマホ用に少し小さくする */
+        line-height: 1.8; /* 行間を広げる */
+        text-align: left; /* 長い文章は左寄せの方が読みやすい */
+    }
+
+    #personalbest { /* 自己ベスト全体 */
+        width: 92%; /* スマホでは画面幅に合わせる */
+        margin: 30px auto; /* 中央寄せにする */
+    }
+
+    #personalbest-title { /* 自己ベストのタイトル */
+        font-size: 22px; /* スマホ用に少し小さくする */
+    }
+
+    #Pb-table { /* 自己ベストの表 */
+        width: 100%; /* 表を親要素いっぱいにする */
+    }
+
+    .table-cell { /* 表のセル */
+        padding: 12px; /* スマホ用に余白を調整 */
+        font-size: 16px; /* スマホ用に文字サイズを調整 */
+    }
+
+    #goal { /* 目標のセクション */
+        width: 92%; /* スマホでは画面幅に合わせる */
+        margin: 30px auto; /* 中央寄せにする */
+        padding: 0 10px; /* 左右に少し余白をつける */
+    }
+
+    #goal-title { /* 目標タイトル */
+        font-size: 22px; /* スマホ用に少し小さくする */
+    }
+
+    #goal-text { /* 目標本文 */
+        font-size: 15px; /* スマホ用に少し小さくする */
+        line-height: 1.8; /* 行間を広げる */
+    }
+
+    #small { /* フッター */
+        font-size: 12px; /* スマホ用に少し小さくする */
+        padding-left: 10px; /* 左に余白をつける */
+        padding-right: 10px; /* 右に余白をつける */
+    }
+}
