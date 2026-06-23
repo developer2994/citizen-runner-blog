@@ -1,0 +1,382 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+    /* 無駄な余白を消す */
+    margin: 0; 
+}
+
+/* ヘッダーの全体 */
+header {
+    position: relative;
+    /* 横幅全体に広げる */
+    width: 100%;
+    height: 70vh;
+}
+
+
+/* ヘッダー画像 */
+#headerPhoto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ヘッダーのタイトル部分 */
+#headerNote {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 30px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* メニュー全体の設定 */
+#menu {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    display: flex;
+    gap: 24px;   
+}
+/* メニューアイテムひとつひとつの設定 */
+.menuItem {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* メニューにホバー機能をつける */
+#menu a:hover {
+    border-bottom: 1px solid #F8F3E8;
+}
+
+/* ヘッダーの文言 */
+#headerText {
+    position: absolute;
+    left: 40px;
+    top: 150px;
+}
+
+/* ヘッダーのキャッチコピーの部分 */
+#headerCatchCopy {
+    color: #F8F3E8;
+    font-size: 40px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+    margin-bottom: 10px;
+}
+
+/* キャッチコピー下の文言 */
+#smallHeadText {
+    color: #F8F3E8;
+    font-size: 15px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+
+/* ヘッダー画像 */
+#headerPhoto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ヘッダーのタイトル部分 */
+#headerNote {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    margin: 0;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 30px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* メニュー全体の設定 */
+#menu {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    display: flex;
+    gap: 24px;
+    
+}
+/* メニューアイテムひとつひとつの設定 */
+.menuItem {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* メニューにホバー機能をつける */
+#menu a:hover {
+    border-bottom: 1px solid #F8F3E8;
+}
+
+/* ヘッダーの文言 */
+#headerText {
+    position: absolute;
+    left: 40px;
+    top: 150px;
+}
+
+/* ヘッダーのキャッチコピーの部分 */
+#headerCatchCopy {
+    color: #F8F3E8;
+    font-size: 40px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+    margin-bottom: 10px;
+}
+
+/* キャッチコピー下の文言 */
+#smallHeadText {
+    color: #F8F3E8;
+    font-size: 15px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* 自己紹介セクション */
+.contents {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 池田力のサイズ */
+.profile-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 自己紹介文 */
+.profile-heading {
+    margin-left: 35px;
+}
+
+
+/* profile写真 */
+.photo {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+}
+
+/* 自己ベストセクション */
+#personalbest {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 主な自己ベスト */
+#personalbest-title {
+    border-left: 5px solid #000033;
+    width: 900px;
+    margin: auto ;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+/* 自己ベストテーブル */
+table {
+    margin: auto;
+    width: 900px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* テーブルの中にボーターをひく */
+th, td {
+    border: 1px solid #000;
+    padding: 8px 12px;
+}
+
+/* 目標セクションの全体 */
+#goal {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+#goal-title {
+    border-left: 5px solid #000033;
+    width: 900px;
+    margin: auto ;
+    padding: 2px 8px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+#goal-text {
+    width: 900px;
+    margin: auto ;
+    padding: 2px 8px;
+    box-sizing: border-box;
+}
+
+#small {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    text-align: center;
+    background-color: #000033;
+    color: aliceblue;
+}
+
+/* ========================= */
+/* スマホ用 */
+/* ========================= */
+
+@media screen and (max-width: 768px) { /* 画面幅が768px以下のときだけ適用 */
+
+    header { /* スマホ時のヘッダー */
+        height: 55vh; /* ヘッダーを少し低くする */
+        min-height: 360px; /* 文字が潰れないように最低高さを確保 */
+    }
+
+    #headerNote { /* ブログ名 */
+        position: absolute; /* スマホでは固定をやめる */
+        top: 20px; /* 上から20pxにする */
+        left: 20px; /* 左から20pxにする */
+        font-size: 22px; /* スマホ用に文字を小さくする */
+    }
+
+    #menu { /* メニュー全体 */
+        position: absolute; /* スマホでは固定をやめる */
+        top: 60px; /* ブログ名の下に配置する */
+        left: 20px; /* 左寄せにする */
+        right: 20px; /* 右側にも余白を作る */
+        display: flex; /* メニューを横並びにする */
+        flex-wrap: wrap; /* 入りきらない場合は折り返す */
+        gap: 14px; /* メニュー同士の間隔を狭くする */
+    }
+
+    .menuItem { /* メニュー項目 */
+        font-size: 14px; /* スマホ用に文字を小さくする */
+    }
+
+    #headerText { /* ヘッダー内の文言 */
+        left: 20px; /* 左余白を小さくする */
+        top: 170px; /* スマホで見やすい位置にする */
+        width: calc(100% - 40px); /* 左右20pxずつ余白を取る */
+    }
+
+    #headerCatchCopy { /* キャッチコピー */
+        font-size: 30px; /* スマホ用に文字を小さくする */
+        line-height: 1.3; /* 折り返しても読みやすくする */
+    }
+
+    #smallHeadText { /* キャッチコピー下の説明文 */
+        font-size: 14px; /* スマホ用に少し小さくする */
+        line-height: 1.6; /* 行間を広げる */
+    }
+
+    .contents { /* 自己紹介セクション */
+        flex-direction: column; /* 画像と文章を縦並びにする */
+        align-items: center; /* 中央に揃える */
+        width: 92%; /* スマホ画面に合わせる */
+        margin: 20px auto; /* 中央寄せにする */
+        padding: 20px; /* 内側の余白を調整する */
+        text-align: center; /* 全体を中央寄せにする */
+    }
+
+    .profile-heading { /* 自己紹介文のエリア */
+        margin-left: 0; /* PC用の左余白を消す */
+        width: 100%; /* 横幅いっぱい使う */
+    }
+
+    .profile-title { /* 名前 */
+        font-size: 26px; /* スマホ用に少し小さくする */
+        margin-bottom: 12px; /* 下に少し余白を作る */
+    }
+
+    .photo { /* プロフィール画像 */
+        width: 180px; /* スマホ用に画像を少し小さくする */
+        height: 180px; /* 正円を保つため高さも同じにする */
+    }
+
+    #personalbest { /* 自己ベストセクション */
+        width: 92%; /* スマホ画面に合わせる */
+        margin: 20px auto; /* 中央寄せにする */
+        padding: 20px; /* 内側余白を調整する */
+    }
+
+    #personalbest-title { /* 主な自己ベスト */
+        width: 100%; /* 900px固定を解除する */
+        margin: 0 auto 12px auto; /* 中央寄せしつつ下に余白を作る */
+        font-size: 20px; /* スマホ用に文字サイズを調整する */
+    }
+
+    table { /* 自己ベストテーブル */
+        width: 100%; /* 900px固定を解除して親要素内に収める */
+        margin: 10px auto 0 auto; /* 中央寄せにする */
+        font-size: 14px; /* スマホ用に文字を少し小さくする */
+    }
+
+    th, td { /* テーブルのセル */
+        padding: 8px 6px; /* スマホ用に左右の余白を少し減らす */
+    }
+
+    #goal { /* 目標セクション */
+        width: 92%; /* スマホ画面に合わせる */
+        margin: 20px auto; /* 中央寄せにする */
+        padding: 20px; /* 内側余白を調整する */
+    }
+
+    #goal-title { /* 目標タイトル */
+        width: 100%; /* 900px固定を解除する */
+        margin: 0 auto 12px auto; /* 中央寄せしつつ下に余白を作る */
+        font-size: 20px; /* スマホ用に文字サイズを調整する */
+    }
+
+    #goal-text { /* 目標本文 */
+        width: 100%; /* 900px固定を解除する */
+        margin: 0 auto; /* 中央寄せにする */
+        font-size: 15px; /* スマホ用に少し小さくする */
+        line-height: 1.8; /* 行間を広げて読みやすくする */
+    }
+
+    #small { /* フッター */
+        font-size: 12px; /* スマホ用に文字を小さくする */
+        padding-left: 10px; /* 左右に余白を作る */
+        padding-right: 10px; /* 左右に余白を作る */
+    }
+}
