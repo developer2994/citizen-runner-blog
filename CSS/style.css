@@ -100,8 +100,8 @@ header {
 
 /* 写真のサイズ */
 .photo {
-    width: 380px;
-    height: 250px;
+    width: 24rem;
+    height: 15rem;
 }
 
 /* 記事のサムネ全体のレイアウト */
