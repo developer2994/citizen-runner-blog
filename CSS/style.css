@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -101,7 +107,11 @@ header {
 /* 写真のサイズ */
 .photo {
     width: 24rem;
+    max-width: 100%;
     height: 15rem;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
 }
 
 /* 記事のサムネ全体のレイアウト */
@@ -134,7 +144,7 @@ header {
 
 /* 種類-レース */
 .article-race {
-    width: 50px;
+    width: 60px;
     padding: 4px 5px 0 5px;
     margin: 2px 0;
     border-radius: 5px;
@@ -237,6 +247,13 @@ header {
         margin: 20px auto 30px auto; /* 中央寄せにする */
         padding: 18px; /* スマホ用に内側余白を調整 */
         gap: 18px; /* 画像と文章の間隔を調整 */
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
     }
 
     #small { /* フッター */
