@@ -22,7 +22,7 @@ header {
     position: relative;
     /* 横幅全体に広げる */
     width: 100%;
-    height: 70vh;
+    height: 100px;
 }
 
 
@@ -200,7 +200,7 @@ header {
 @media screen and (max-width: 768px) { /* 画面幅が768px以下のときだけ適用 */
 
     header { /* ヘッダー全体 */
-        height: 55vh; /* スマホではヘッダーを少し低くする */
+        height: 420px; /* スマホではヘッダーを少し低くする */
         min-height: 360px; /* 文字が潰れないように最低高さを確保 */
     }
 
